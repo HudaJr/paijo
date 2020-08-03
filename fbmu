@@ -107,7 +107,7 @@ def randomstring(num):
 def banner():
 	os.system("cls" if os.name == "nt" else "clear")
 	print(LOGO)
-	print("    " + Back.BLUE + Fore.BLACK + random.choice([" donate: https://cutt.ly/salismazaya ", " by: hudajr from indonesia "]))
+	print("    " + Back.BLUE + Fore.BLACK + random.choice([" donate: https://hudajr.com ", " by: hudajr facebook.com/huda.reslov1 "]))
 	print()
 
 def input_(text, que = True, looping = True):
@@ -229,7 +229,7 @@ def home():
 		if not check_login():
 			login()
 		else:
-			print(ERR + "You has been login!")
+			print(ERR + "Anda telah masuk!")
 			enter()
 	elif pilih == 3:
 		confirm_execute()
@@ -277,15 +277,15 @@ def login():
 @updateFunc
 def menu():
 	banner()
-	print(f"   Login as: {G}{ses.name[:22]}")
-	print(f"   UID     : {G}{ses.id}\n")
+	print(f"   Masuk Sebagai: {G}{ses.name[:22]}")
+	print(f"   ID Anda      : {G}{ses.id}\n")
 	print(f"{C}   No.{W} Menu\n{Y}   --- ----")
 	func = [like_menu, react_menu, comment_menu, people_menu, group_menu, chat_menu, downloader_menu, deleter_menu, other_menu]
 	pilih = show_select_menu([
 		"Like",
 		"React", 
 		"Komen", 
-		"Orang", 
+		"People", 
 		"Group", 
 		"Pesan", 
 		"Download", 
